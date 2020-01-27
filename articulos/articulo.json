@@ -1,0 +1,52 @@
+{
+    "_type" : "articulo",
+    "_created" : {
+        "date" : "2020-01-26T14:39:28-06:00",
+        "user" : "5e2a2a26fde6b13973081ee8",
+        "_user" : "Jaim Heffes",
+        "branch" : "5e2a2ca3ea09e16c54cd97bf",
+        "folio" : {{folio}}
+    },
+    "base" : {
+        "estatus" : "afectado",
+        "_estatus" : "Afectado",
+        "factor" : {{factor}},
+        "tipoArticulo" : "inventariable",
+        "_tipoArticulo" : "Inventariable",
+        "_unidad" : "{{_unidad}}",
+        "nombre" : "{{descripcion}}",
+        "esInventariable" : true,
+        "codigo" : "{{codigo}}",
+        "descripcion" : "{{descripcion}}",
+        "costoUnitario" : {{costoUnitario}},
+        "articuloPrecios" : {
+            "_created" : {
+                "date" : "2020-01-26T14:39:58-06:00",
+                "user" : "5e2a2a26fde6b13973081ee8",
+                "_user" : "Jaim Heffes",
+                "folio" : {{folio}}
+            },
+            "base" : {
+                "tipoPromocion" : "no",
+                "_tipoPromocion" : "No",
+                "nombre" : "Precio 1: ${{precio1}} \nPrecio 2: ${{precio2}} \nPrecio 3: ${{precio3}} \nPrecio 3x: ${{precio3x}} \nPrecio 4: ${{precio4}}",
+                "precio1" : {{precio1}},
+                "precio2" : {{precio2}},
+                "precio3" : {{precio3}},
+                "precio3x" : {{precio3x}},
+                "precio4" : {{precio4}},
+            },
+            "_id" : "5e2df9220265212e14fa2bb6",
+            "_type" : "articuloPrecios",
+            "_name" : "Precio 1: ${{precio1}} \nPrecio 2: ${{precio2}} \nPrecio 3: ${{precio3}} \nPrecio 3x: ${{precio3x}} \nPrecio 4: ${{precio4}}",
+        },
+        "unidad" : "{{unidad}}",
+        "_articuloPrecios" : "Precio 1: ${{precio1}} \nPrecio 2: ${{precio2}} \nPrecio 3: ${{precio3}} \nPrecio 3x: ${{precio3x}} \nPrecio 4: ${{precio4}}",
+    },
+    "_name" : "{{descripcion}}",
+    "_updated" : {
+        "user" : "5e2a2a26fde6b13973081ee8",
+        "_user" : "Jaim Heffes",
+        "date" : "2020-01-26T14:40:12-06:00"
+    }
+}

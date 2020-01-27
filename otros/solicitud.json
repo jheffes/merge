@@ -1,0 +1,196 @@
+{
+    "_created" : {
+        "date" : "2019-08-18T16:35:55-05:00",
+        "user" : "{{medico}}",
+        "_user" : "{{_medico}}",
+        "sid" : "{{shortid}}",
+        "board" : "consultaExternaSolicitudes",
+        "service" : "consultaExterna",
+        "_service" : "Consulta Externa",
+        "folio" : {{folio}}
+    },
+    "_date" : "2019-08-18T16:35:11-05:00",
+    "_isMigrated": true,
+    "_isAffected" : true,
+    "_name" : "Consulta Externa Procedimientos: {{descripcion}} Consulta en Admisión Continua, Precio: {{precio}} N{{nivel}} ({{codigo}}) \nPrecio Total: {{precio}} \nCita: {{desde}} en Consulta Externa ({{_medico}})\n{{observaciones}}",
+    "_parent" : {
+        "type" : "persona",
+        "id" : "{{persona}}",
+        "name" : "Solicitud Consulta Externa {{folio}}"
+    },
+    "_source" : {
+        "type" : "consultaExterna",
+        "id" : "5d59c48fa3080ac8209cd8d9",
+        "name" : "Consulta Externa Procedimientos: {{descripcion}} Consulta en Admisión Continua, Precio: {{precio}} N{{nivel}} ({{codigo}}) \nPrecio Total: {{precio}} \nCita: {{desde}} en Consulta Externa ({{_medico}})"
+    },
+    "_type" : "solicitud",
+    "_updated" : {
+        "date" : "2019-08-18T16:35:55-05:00",
+        "user" : "{{medico}}",
+        "_user" : "{{_medico}}",
+        "moment" : "programado",
+        "_moment" : "Programado"
+    },
+    "base" : {
+        "nota" : "5d59c48d003af42e07b51c90",
+        "_nota" : "Solicitud Consulta Externa {{folio}}",
+        "tipoSolicitud" : "consultaExterna",
+        "_tipoSolicitud" : "Consulta Externa",
+        "servicio" : "consultaExterna",
+        "servicioOrigen" : "consultaExterna",
+        "_servicioOrigen" : "Consulta Externa",
+        "estatus" : "nuevo",
+        "_estatus" : "Nuevo",
+        "cita" : "{{slot}}",
+        "_cita" : "{{desde}} en Consulta Externa ({{medico}})",
+        "descripcion" : "programada",
+        "_descripcion" : "Programada",
+        "fechaHoraCita" : "{{desde}}",
+        "duracionCita" : {{duracion}},
+        "solicitante" : "{{medico}}",
+        "_solicitante" : "{{_medico}}",
+        "prestadorServicios" : "{{medico}}",
+        "_prestadorServicios" : "{{_medico}}",
+        "especialidad" : "{{especialidad}}",
+        "_especialidad" : "{{_especialidad}}",
+        "esConsultaExterna" : true,
+        "cantidad" : 1,
+        "precio" : {{precio}},
+        "importe" : {{precio}},
+        "consultaExterna" : {
+            "_created" : {
+                "date" : "2019-08-18T16:35:11-05:00",
+                "user" : "{{medico}}",
+                "_user" : "{{_medico}}",
+                "folio" : {{folio}}
+            },
+            "base" : {
+                "estatus" : "nuevo",
+                "_estatus" : "Nuevo",
+                "precio" : {{folio}},
+                "nombre" : "Consulta Externa Procedimientos: {{descripcion}} Consulta en Admisión Continua, Precio: {{precio}} N{{nivel}} ({{codigo}}) \nPrecio Total: {{precio}} \nCita: {{desde}} en Consulta Externa ({{_medico}})",
+                "_params" : {
+                    "field" : "consultaExterna",
+                    "personaId" : "{{persona}}"
+                },
+                "cita" : {
+                    "_created" : {
+                        "date" : "2019-08-18T16:35:13-05:00",
+                        "user" : "{{medico}}",
+                        "_user" : "{{_medico}}",
+                        "folio" : {{folio}}
+                    },
+                    "base" : {
+                        "desde" : "{{desde}}",
+                        "horizonteCita" : "7",
+                        "_horizonteCita" : "1 Semana",
+                        "_duracionCita" : "{{duracion}} minutos",
+                        "_area" : "Consulta Externa",
+                        "_especialidad" : "{{_especialidad}}",
+                        "_descripcion" : "Programada",
+                        "nombre" : "{{desde}} en Consulta Externa ({{medico}})",
+                        "_params" : {
+                            "field" : "cita"
+                        },
+                        "duracionCita" : "{{duracion}}",
+                        "area" : "consultaExterna",
+                        "especialidad" : [ 
+                            "6821"
+                        ],
+                        "fechaHoraCita" : "{{desde}}",
+                        "_fechaHoraCita" : "{{desde}}",
+                        "descripcion" : "espontanea"
+                    },
+                    "_short" : "Cita {{folio}}",
+                    "_id" : "{{mongoid}}",
+                    "agenda" : {
+                        "tieneCita" : true,
+                        "fechaHoraCita" : "{{desde}}",
+                        "duracionCita" : {{duracion}},
+                        "resumen" : [ 
+                            {
+                                "actor" : "{{medico}}",
+                                "_actor" : "{{_medico}}",
+                                "actorType" : "prestadorServicios",
+                                "serviceType" : "{{especialidad}}",
+                                "_serviceType" : "{{_especialidad}}",
+                                "date" : "{{fecha}}",
+                                "startDate" : "{{desde}}",
+                                "endDate" : "{{hasta}}",
+                                "_details" : "{{_especialidad}}: {{_medico}}"
+                            }
+                        ],
+                        "slots" : [ 
+                            "{{slot}}"
+                        ]
+                    },
+                    "_type" : "cita",
+                    "_name" : "{{desde}} en Consulta Externa ({{medico}})"
+                },
+                "procedimientoMultiple" : [ 
+                    {
+                        "_created" : {
+                            "date" : "2019-08-18T16:35:39-05:00",
+                            "user" : "{{medico}}",
+                            "_user" : "{{_medico}}",
+                            "folio" : 14
+                        },
+                        "base" : {
+                            "_servicioSolicitado" : "Consulta Externa",
+                            "_listaPrecios" : "N{{nivel}}",
+                            "nombre" : "Servicio: Consulta Externa \nProcedimiento: Consulta en Admisión Continua, Precio: {{precio}} N{{nivel}} ({{codigo}})",
+                            "_params" : {
+                                "field" : "procedimientoMultiple"
+                            },
+                            "servicioSolicitado" : "consultaExterna",
+                            "articulo" : "5d1e50f4f59d898e113926b4",
+                            "codigo" : "{{codigo}}",
+                            "descripcion" : "{{descripcion}}",
+                            "listaPrecios" : "price{{nivel}}",
+                            "precio" : {{precio}},
+                            "_articulo" : "{{descripcion}}"
+                        },
+                        "_short" : "Procedimiento {{folio}}",
+                        "_id" : "{{mongoid}}",
+                        "_type" : "procedimientoMultiple",
+                        "_name" : "Servicio: Consulta Externa \nProcedimiento: Consulta en Admisión Continua, Precio: {{precio}} N{{nivel}} ({{codigo}})"
+                    }
+                ],
+                "_cita" : "{{desde}} en Consulta Externa ({{medico}})",
+                "_procedimientoMultiple" : "Servicio: Consulta Externa \nProcedimiento: Consulta en Admisión Continua, Precio: {{precio}} N{{nivel}} ({{codigo}})"
+            },
+            "_short" : "Consulta Externa {{folio}}",
+            "_id" : "{{mongoid}}",
+            "_type" : "consultaExterna",
+            "_name" : "Servicio: Consulta Externa \nProcedimiento: Consulta en Admisión Continua, Precio: {{precio}} N{{nivel}} ({{codigo}})"
+        },
+        "_consultaExterna" : "Servicio: Consulta Externa \nProcedimiento: Consulta en Admisión Continua, Precio: {{precio}} N{{nivel}} ({{codigo}})"
+    },
+    "contexto" : {
+        "hospitalizacion" : {
+            "estaActivo" : false
+        },
+        "estaActivo" : true,
+        "icono" : "flag",
+        "color" : "blue"
+    },
+    "control" : {
+        "importe" : {{precio}},
+        "porCobrar" : {{saldo}}
+    },
+    "persona" : {
+        "id" : "{{persona}}",
+        "tipoExpediente" : "paciente",
+        "nombreCompleto" : "{{_persona}}",
+        "clave" : "{{personaClave}}",
+        "esPaciente" : true,
+        "nivelSocioeconomico": "{{nivel}}"
+    },
+    "_moment" : {
+        "programado" : {
+            "date" : "{{desde}}",
+            "user" : "{{medico}}",
+            "_user" : "{{_medico}}"
+        }
+    }
+}

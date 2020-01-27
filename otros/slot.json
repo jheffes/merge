@@ -1,0 +1,22 @@
+{{#if medico}}
+{
+    "_id" : ObjectId("{{slot}}"),
+    "_type" : "_solicitud",
+    "schedule" : "5d5bb86f64d46685397b3346",
+    "_schedule" : "Planeación Agenda",
+    "date" : "{{fecha}}",
+    "status" : "busy",
+    "text" : "Consulta Externa",
+    "area" : "consultaExterna",
+    "color" : "blue",
+    "actor" : "{{medico}}",
+    "_actor" : "{{_medico}}",
+    "actorType" : "prestadorServicios",
+    "serviceType" : "{{especialidad}}",
+    "_serviceType" : "{{_especialidad}}",
+    "startDate" : "{{desde}}",
+    "endDate" : "{{hasta}}",
+    "duration" : {{duracion}},
+    "_isMigrated": true,
+}
+{{/if}}
