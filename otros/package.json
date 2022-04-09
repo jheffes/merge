@@ -2,7 +2,7 @@
   "dependencies": {
     "async": "^3.1.0",
     "handlebars": "^4.1.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "mongoid-js": "^1.3.0",
     "shortid": "^2.2.14",
     "underscore": "^1.9.1",
